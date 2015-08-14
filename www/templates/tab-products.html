@@ -1,0 +1,15 @@
+<ion-view view-title="Products">
+    <ion-content class="padding">
+
+        <div class="list" ng-repeat="item in list" ui-sref="tab.product({productId: item.id})">
+            <a class="item item-thumbnail-left" href="#">
+                <img ng-src="item.pict">
+
+                <h2>{{item.name}}</h2>
+
+                <p>{{item.description}}</p>
+            </a>
+        </div>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="Product">
+    <ion-content class="padding">
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Name" ng-model="product.name">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Description" ng-model="product.description">
+            </label>
+        </div>
+
+
+        <button ng-if="isNewProduct" class="button button-balanced" ng-click="save()">
+            Save product
+        </button>
+
+        <button ng-if="!isNewProduct" class="button button-balanced" ng-click="save()">
+            Update product
+        </button>
+
+    </ion-content>
+</ion-view>
